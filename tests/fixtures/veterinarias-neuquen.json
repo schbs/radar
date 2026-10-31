@@ -1,0 +1,70 @@
+{
+  "descripcion": "Fixtures FICTICIOS para tests y corrida en seco: 12 veterinarias inventadas de Neuquén, con la forma de las respuestas de Places API (New), de cada web y de PageSpeed Insights. Los dominios .example están reservados (RFC 2606) y no existen. No son datos reales de ningún negocio.",
+  "consulta": { "rubro": "veterinarias", "ciudad": "Neuquén" },
+  "negocios": [
+    {
+      "placeId": "ficticio-vet-01",
+      "detalle": { "displayName": { "text": "Veterinaria Los Álamos" }, "formattedAddress": "Av. Ejemplo 100, Neuquén", "rating": 4.6, "userRatingCount": 64, "primaryTypeDisplayName": { "text": "Veterinaria" } }
+    },
+    {
+      "placeId": "ficticio-vet-02",
+      "detalle": { "displayName": { "text": "Clínica Veterinaria Confluencia Sur" }, "formattedAddress": "Calle Ficticia 230, Neuquén", "websiteUri": "https://confluencia-sur.example/", "rating": 4.8, "userRatingCount": 210, "primaryTypeDisplayName": { "text": "Veterinaria" } },
+      "sitio": { "status": 200, "final": "https://confluencia-sur.example/", "httpRedirige": true, "whatsapp": true },
+      "pagespeed": { "rendimiento": 92, "lcpMs": 1900, "cls": 0.02, "tbtMs": 90 }
+    },
+    {
+      "placeId": "ficticio-vet-03",
+      "detalle": { "displayName": { "text": "Veterinaria Patitas del Limay" }, "formattedAddress": "Pasaje Inventado 45, Neuquén", "websiteUri": "http://patitas-del-limay.example/", "rating": 4.3, "userRatingCount": 35, "primaryTypeDisplayName": { "text": "Veterinaria" } },
+      "sitio": { "status": 200, "final": "http://patitas-del-limay.example/", "httpRedirige": false, "whatsapp": false },
+      "pagespeed": { "rendimiento": 38, "lcpMs": 6200, "cls": 0.31, "tbtMs": 880 }
+    },
+    {
+      "placeId": "ficticio-vet-04",
+      "detalle": { "displayName": { "text": "Centro Veterinario Alto Valle" }, "formattedAddress": "Ruta Ejemplo km 3, Neuquén", "websiteUri": "https://alto-valle-vet.example/", "rating": 4.1, "userRatingCount": 12, "primaryTypeDisplayName": { "text": "Veterinaria" } },
+      "sitio": { "status": 503, "final": "https://alto-valle-vet.example/" }
+    },
+    {
+      "placeId": "ficticio-vet-05",
+      "detalle": { "displayName": { "text": "Veterinaria San Martín Norte" }, "formattedAddress": "Av. Demostración 1500, Neuquén", "websiteUri": "https://sanmartin-norte.example/", "rating": 4.5, "userRatingCount": 48, "primaryTypeDisplayName": { "text": "Veterinaria" } },
+      "sitio": { "status": 200, "final": "https://sanmartin-norte.example/", "httpRedirige": false, "whatsapp": true },
+      "pagespeed": { "rendimiento": 71, "lcpMs": 3100, "cls": 0.05, "tbtMs": 240 }
+    },
+    {
+      "placeId": "ficticio-vet-06",
+      "detalle": { "displayName": { "text": "Mundo Mascota Neuquén" }, "formattedAddress": "Calle Prueba 77, Neuquén", "rating": 4.0, "userRatingCount": 6, "primaryTypeDisplayName": { "text": "Tienda de mascotas" } }
+    },
+    {
+      "placeId": "ficticio-vet-07",
+      "detalle": { "displayName": { "text": "Veterinaria El Chañar" }, "formattedAddress": "Av. Ficticia 900, Neuquén", "websiteUri": "https://el-chanar-vet.example/", "rating": 4.4, "userRatingCount": 27, "primaryTypeDisplayName": { "text": "Veterinaria" } },
+      "sitio": { "status": 200, "final": "https://el-chanar-vet.example/", "httpRedirige": true, "whatsapp": false },
+      "pagespeed": { "rendimiento": 24, "lcpMs": 9800, "cls": 0.12, "tbtMs": 1650 }
+    },
+    {
+      "placeId": "ficticio-vet-08",
+      "detalle": { "displayName": { "text": "Hospital Veterinario Patagónico" }, "formattedAddress": "Calle Inventada 12, Neuquén", "websiteUri": "https://hospital-patagonico.example/", "rating": 4.7, "userRatingCount": 150, "primaryTypeDisplayName": { "text": "Hospital veterinario" } },
+      "sitio": { "status": 200, "final": "https://hospital-patagonico.example/", "httpRedirige": true, "whatsapp": true },
+      "pagespeed": { "rendimiento": 55, "lcpMs": 4600, "cls": 0.08, "tbtMs": 410 }
+    },
+    {
+      "placeId": "ficticio-vet-09",
+      "detalle": { "displayName": { "text": "Veterinaria Rincón Verde" }, "formattedAddress": "Pasaje Ejemplo 8, Neuquén", "websiteUri": "https://rincon-verde-vet.example/", "rating": 3.9, "userRatingCount": 3, "primaryTypeDisplayName": { "text": "Veterinaria" } },
+      "sitio": { "error": "TimeoutError" }
+    },
+    {
+      "placeId": "ficticio-vet-10",
+      "detalle": { "displayName": { "text": "Peluquería Canina Huellitas" }, "formattedAddress": "Calle Demo 300, Neuquén", "rating": 4.9, "userRatingCount": 18, "primaryTypeDisplayName": { "text": "Peluquería de mascotas" } }
+    },
+    {
+      "placeId": "ficticio-vet-11",
+      "detalle": { "displayName": { "text": "Veterinaria Barrio Oeste" }, "formattedAddress": "Av. Prueba 450, Neuquén", "websiteUri": "http://barrio-oeste-vet.example/", "rating": 4.2, "userRatingCount": 22, "primaryTypeDisplayName": { "text": "Veterinaria" } },
+      "sitio": { "status": 200, "final": "http://barrio-oeste-vet.example/", "httpRedirige": false, "whatsapp": true },
+      "pagespeed": { "rendimiento": 45, "lcpMs": 5000, "cls": 0.15, "tbtMs": 720 }
+    },
+    {
+      "placeId": "ficticio-vet-12",
+      "detalle": { "displayName": { "text": "Clínica Veterinaria Neuquén Ficticia" }, "formattedAddress": "Calle Ejemplo 600, Neuquén", "websiteUri": "https://nqn-ficticia-vet.example/", "rating": 4.6, "userRatingCount": 9, "primaryTypeDisplayName": { "text": "Veterinaria" } },
+      "sitio": { "status": 200, "final": "https://nqn-ficticia-vet.example/", "httpRedirige": true, "whatsapp": false },
+      "pagespeed": { "rendimiento": 88, "lcpMs": 2200, "cls": 0.01, "tbtMs": 120 }
+    }
+  ]
+}

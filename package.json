@@ -1,0 +1,46 @@
+{
+  "name": "radar",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Clay-style prospecting and enrichment pipeline for a fictional web agency (demo project, fictional fixtures).",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev -p 3204",
+    "build": "next build",
+    "start": "next start -p 3204",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check-env": "node scripts/check-env.mjs",
+    "radar:seco": "tsx scripts/corrida-seca.ts",
+    "test:e2e": "playwright test",
+    "lighthouse": "node scripts/lighthouse.mjs",
+    "radar:real": "tsx scripts/corrida-real.ts",
+    "dev:real": "node scripts/dev-real.mjs",
+    "capturas": "tsx scripts/capturas.ts"
+  },
+  "dependencies": {
+    "next": "^16.4.3",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "server-only": "^0.0.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.64.1",
+    "@secretlint/secretlint-rule-preset-recommend": "^9.3.4",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.3",
+    "lighthouse": "^12.8.2",
+    "secretlint": "^9.3.4",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
+}

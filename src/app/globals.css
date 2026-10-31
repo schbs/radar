@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+/* Identidad A · Consola (docs/brand.md): tinta azulada, retícula de 1 px, ámbar fósforo para números y acciones,
+   Martian Mono para datos y títulos. Se apaga la paleta por defecto de Tailwind: solo existen estos colores. */
+@theme {
+  --color-*: initial;
+  --color-tinta: oklch(0.2 0.02 260);
+  --color-panel: oklch(0.24 0.022 260);
+  --color-panel-alto: oklch(0.28 0.024 260);
+  --color-reticula: oklch(0.34 0.02 260);
+  --color-borde: oklch(0.58 0.02 260);
+  --color-texto: oklch(0.94 0.008 260);
+  --color-texto-suave: oklch(0.78 0.015 260);
+  --color-ambar: oklch(0.8 0.14 75);
+  --color-ambar-claro: oklch(0.87 0.11 80);
+  --color-ambar-tenue: oklch(0.32 0.05 75);
+  --color-verde: oklch(0.8 0.12 155);
+  --color-rojo: oklch(0.76 0.13 25);
+
+  --font-mono: var(--font-martian), ui-monospace, monospace;
+  --font-sans: var(--font-plex), system-ui, sans-serif;
+
+  --radius-*: initial;
+  --radius-sm: 2px;
+  --ease-radar: cubic-bezier(0.2, 0, 0, 1);
+}
+
+html {
+  background: var(--color-tinta);
+  color: var(--color-texto);
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ambar);
+  outline-offset: 2px;
+}
+
+/* Retícula de fondo del encabezado: líneas de 1 px, como la pantalla de un instrumento. */
+.reticula {
+  background-image:
+    linear-gradient(var(--color-reticula) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-reticula) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: -1px -1px;
+}
+
+/* Firma de movimiento: el barrido del radar da una vuelta al terminar cada corrida. */
+@keyframes barrido {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.barrido {
+  transform-origin: 50% 50%;
+  animation: barrido 1.4s var(--ease-radar) 1 both;
+}
+
+/* Barras de score: crecen en horizontal desde la izquierda (scaleX). El valor llega como --valor (0 a 1). */
+@keyframes crecer {
+  from {
+    transform: scaleX(0);
+  }
+}
+
+.barra {
+  transform-origin: left center;
+  transform: scaleX(var(--valor));
+  animation: crecer 0.6s var(--ease-radar) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .barrido,
+  .barra {
+    animation: none;
+  }
+}
