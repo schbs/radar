@@ -32,8 +32,8 @@ tokens: ámbar sobre tinta para texto grande y números; el texto corrido va en 
 
 | Proyecto | Display | Hue (≥ 30°) | Layout | Movimiento | Forma | Difiere en |
 |---|---|---|---|---|---|---|
-| PROPUESTA RED INMOBILIARIA | ✓ Montserrat vs Martian Mono | ✓ 25° vs 75° (50°) | ✓ | ✓ | ✓ | 5/5 |
-| PROPUESTA REY AUTOMOTOR | ✓ | ✓ 275° vs 75° | ✓ | ✓ | ✓ | 5/5 |
+| Propuesta inmobiliaria (no contratada) | ✓ Montserrat vs Martian Mono | ✓ 25° vs 75° (50°) | ✓ | ✓ | ✓ | 5/5 |
+| Propuesta concesionaria (no contratada) | ✓ | ✓ 275° vs 75° | ✓ | ✓ | ✓ | 5/5 |
 | turnolisto | ✓ Lexend vs Martian Mono | ✓ 188° vs 75° | ✓ | ✓ casi nulo vs barrido | ✓ fondo crema vs oscuro | 5/5 |
 | embudo | ✓ Space Grotesk vs Martian Mono | ✓ 150° vs 75° | ✓ grilla 8/4 vs lista + ficha | ✓ barras que crecen vs barrido + barras: comparte barras | ✓ | 4/5 |
 | fojas | ✓ Newsreader vs Martian Mono | ✓ 235° vs 75° | ✓ | ✓ | ✓ | 5/5 |
